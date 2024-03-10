@@ -1,4 +1,4 @@
-<form [formGroup]="registerForm">
+<form [formGroup]="registerForm" (ngSubmit)="submitDetails()">
     <p-card header="Register" [style]="{width: '360px'}">
         <div class="field">
             <label fpr="fullName">Name </label>
@@ -41,7 +41,7 @@
                 Password Should Match
             </small>
         </div>
-        <p-button label="Register" styleClass="w-full" [disabled]="registerForm.invalid"></p-button>
+        <p-button label="Register" styleClass="w-full" [disabled]="registerForm.invalid" type="submit"></p-button>
 
         <div class="mt-2">
             Already a Member? <a routerLink="/login">Login</a>
