@@ -1,0 +1,109 @@
+.topBorderHeader {
+    background-color: blue;
+    height: 25px;
+    padding: 7px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.topNav {
+    background: transparent;
+    /* background-color: white; */
+    overflow: hidden;
+    border-radius: 5px;
+    height: 55px;
+}
+
+.topNav a {
+    float: left;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* On Hover change color */
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* activate-Current page */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  /* --------------------- */
+.banner img {
+    display: block;
+    width: 100%;
+    height: 750px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------- */
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 0 0 20px;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
